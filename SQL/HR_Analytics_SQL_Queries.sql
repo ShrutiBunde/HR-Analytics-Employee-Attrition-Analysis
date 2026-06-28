@@ -1,3 +1,21 @@
+-- HR Analytics Dashboard Project
+-- Employee Attrition & Workforce Insights
+
+-- ============================================
+-- DATABASE SELECTION
+-- ============================================
+
+USE hr_analytics;
+
+-- ============================================
+-- VIEW DATA
+-- ============================================
+
+-- Check total records
+SELECT COUNT(*) AS Total_Employees
+FROM hr_data;
+
+-- View first 10 rows
 SELECT *
 FROM hr_data
 LIMIT 10;
@@ -5,6 +23,10 @@ LIMIT 10;
 -- Total Employees
 SELECT COUNT(*) AS Total_Employees
 FROM hr_data;
+
+-- ============================================
+-- ATTRITION ANALYSIS
+-- ============================================
 
 -- Total Attrition
 SELECT COUNT(*) AS Attrition_Count
